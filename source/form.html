@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Сайт города Седона</title>
+  <title>Отзыв о Седоне</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <h1 class="visually-hidden">Городок Седона.</h1>
+    <h1 class="visually-hidden">Отзыв о Седоне.</h1>
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
@@ -18,7 +18,7 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a>
               Главная
             </a>
@@ -31,7 +31,7 @@
         </ul>
         <div class="main-nav__list user-list">
           <ul class="main-nav__list user-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--current">
               <a href="form.html">
                 Форма отзыва
               </a>
@@ -49,86 +49,137 @@
 
   <main class="main-container">
     <section class="main-container__banner">
-      <img class="main-container__banner-image" src="img/background.jpg" width="901" height="389"
-        alt="Добро пожаловать в великолепную Седону. Потому что Гранд Каньон отстой.">
+      <img class="main-container__banner-image" src="img/background.jpg" width="901" height="214"
+        alt="Добро пожаловать в Седону.">
     </section>
 
-    <section class="main-container__description">
-      <h2 class="main-container__description-title">Седона — небольшой городок в Аризоне,<br>
-        заслуживающий большего!</h2>
-      <p class="main-container__description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    </section>
+    <section class="review">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами
+        достопримечательностях</p>
+      <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="review-form__group review-form__group--full-name">
+          <legend class="review-form__title page__title">Представьтесь:</legend>
+          <ul class="review-form__list">
+            <li class="review-form__item">
+              <label class="review-form__label" for="name">ИМЯ*:</label>
+              <input class="review-form__input" type="text" id="name" name="name" placeholder="Пётр" required>
+            </li>
 
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества города.</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item-color">
-          <div class="advantages__item">
-            <h3 class="advantages__title-color">Настоящий городок</h3>
-            <p class="advantages__description-reason">— №1 —</p>
-            <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <img class="advantages__item-image" src="img/city.jpg" width="320" height="260" alt="Город Седона.">
+            <li class="review-form__item">
+              <label class="review-form__label" for="surname">ФАМИЛИЯ*:</label>
+              <input class="review-form__input" type="text" id="surname" name="surname" placeholder="Пустота" required>
+            </li>
 
-          <section class="service">
-            <h2 class="visually-hidden">Обслуживание.</h2>
-            <ul class="service__list">
-              <li class="service__item">
-                <h3 class="service__title service__title--housing">Жильё</h3>
-                <p class="service__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
+            <li class="review-form__item">
+              <label class="review-form__label" for="second-name">Отчество:</label>
+              <input class="review-form__input" type="text" id="second-name" name="second-name"
+                placeholder="Викторович">
+            </li>
+          </ul>
+        </fieldset>
 
-              <li class="service__item">
-                <h3 class="service__title service__title--food">Еда</h3>
-                <p class="service__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-              </li>
+        <fieldset class="review-form__group review-form__group--contacts">
+          <legend class="review-form__title page__title">Контактная информация:</legend>
+          <ul class="review-form__list">
+            <li class="review-form__item">
+              <label class="review-form__label" for="contacts-phone">Контактный телефон*:</label>
+              <input class="review-form__input" type="tel" id="contacts-phone" name="contacts-phone"
+                placeholder="Введите телефон" required>
+            </li>
 
-              <li class="service__item">
-                <h3 class="service__title service__title--gift">Сувениры</h3>
-                <p class="service__description">Не только китайского, но и настоящего местного производства!</p>
-              </li>
-            </ul>
-          </section>
-        </li>
+            <li class="review-form__item">
+              <label class="review-form__label" for="contacts-email">Электронная почта*:</label>
+              <input class="review-form__input" type="email" id="contacts-email" name="contacts-email"
+                placeholder="Введите e-mail" required>
+            </li>
+          </ul>
+        </fieldset>
 
-        <li class="advantages__item-color">
-          <img class="advantages__item-image" src="img/canyon.jpg" width="320" height="260" alt="Мост Дьявола.">
-          <div class="advantages__item">
-            <h3 class="advantages__title-color">Там есть Мост дьявола</h3>
-            <p class="advantages__description-reason">— №2 —</p>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-        </li>
+        <fieldset class="review-form__group review-form__group--impression">
+          <legend class="review-form__title page__title">Ваше общее впечатление:</legend>
+          <ul class="review-form__list">
+            <li class="review-form__item">
+              <label class="review-form__label control" for="impression-positive">
+                <input class="visually-hidden control__input" id="impression-positive" type="radio" name="impression"
+                  value="positive" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее положительное</span>
+              </label>
+            </li>
 
-        <li class="advantages__item">
-          <h3 class="advantages__title">Небольшая площадь</h3>
-          <p class="advantages__description-reason">— №3 —</p>
-          <p class="advantages__description">Все интересные места находятся очень близко</p>
-        </li>
+            <li class="review-form__item">
+              <label class="review-form__label control" for="impression-negative">
+                <input class="visually-hidden control__input" id="impression-negative" type="radio" name="impression"
+                  value="negative">
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее отрицательное</span>
+              </label>
+            </li>
 
-        <li class="advantages__item">
-          <h3 class="advantages__title">Красивая дорога</h3>
-          <p class="advantages__description-reason">— №4 —</p>
-          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
+            <li class="review-form__item">
+              <label class="review-form__label control" for="impression-indistinct">
+                <input class="visually-hidden control__input" id="impression-indistinct" type="radio" name="impression"
+                  value="indistinct">
+                <span class="control__mark"></span>
+                <span class="control__label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-        <li class="advantages__item">
-          <h3 class="advantages__title">Мало туристов</h3>
-          <p class="advantages__description-reason">— №5 —</p>
-          <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ul>
-    </section>
+        <fieldset class="review-form__group review-form__group--attractions">
+          <legend class="review-form__title page__title">Посещённые достопримечательности:</legend>
+          <ul class="review-form__list">
+            <li class="review-form__item">
+              <label class="review-form__label control" for="bridge-diablo">
+                <input class="visually-hidden control__input" id="bridge-diablo" type="checkbox" name="attractions"
+                  value="bridge-diablo" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Мост Дьявола</span>
+              </label>
+            </li>
 
-    <section class="hotel-search">
-      <h2 class="hotel-search__title">Заинтересовались?</h2>
-      <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-        гостиниц в Седоне</p>
-      <a class="button button-search" href="catalog.html">Найти гостиницу</a>
-    </section>
+            <li class="review-form__item">
+              <label class="review-form__label control" for="mountain-bell">
+                <input class="visually-hidden control__input" id="mountain-bell" type="checkbox" name="attractions"
+                  value="mountain-bell" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Гора-Колокол</span>
+              </label>
+            </li>
 
-    <section class="map">
-      <img src="img/map.jpg" width="320" height="350" alt="Расположение Седоны на карте.">
+            <li class="review-form__item">
+              <label class="review-form__label control" for="slide-park">
+                <input class="visually-hidden control__input" id="slide-park" type="checkbox" name="attractions"
+                  value="slide-park" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Слайд-парк</span>
+              </label>
+            </li>
+
+            <li class="review-form__item">
+              <label class="review-form__label control" for="red-rocks">
+                <input class="visually-hidden control__input" id="red-rocks" type="checkbox" name="attractions"
+                  value="red-rocks">
+                <span class="control__mark"></span>
+                <span class="control__label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="review-form__group review-form__group--feeling">
+          <legend class="review-form__title page__title">Опишите свои эмоции:</legend>
+          <label class="review-form__label" for="feeling">
+            <textarea class="review-form__textarea" id="feeling" name="feeling" rows="5"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+        </fieldset>
+
+        <button class="review-form__button button" type="submit">Отправить отзыв</button>
+        <span class="review-form__required">* — обязательные поля</span>
+      </form>
     </section>
   </main>
 
@@ -206,6 +257,22 @@
       </svg>
     </a>
   </footer>
+
+  <div class="review-modal">
+    <div class="review-modal__modal-error review-modal__modal-error--close ">
+      <h2 class="review-modal__title">Что-то пошло не так!</h2>
+      <p class="review-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="review-modal__button button" type="button">Oк</button>
+    </div>
+
+    <div class="review-done review__modal__modal-done--close">
+      <h2 class="review-modal__title">Ваш отзыв отправлен!</h2>
+      <p class="review-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+        опубликуем его на сайте.</p>
+      <button class="review-modal__button button" type="button">Закрыть окно</button>
+    </div>
+  </div>
+
 </body>
 
 </html>
