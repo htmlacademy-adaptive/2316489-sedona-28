@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="main-header">
     <h1 class="visually-hidden">Отзыв о Седоне.</h1>
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
     <nav class="main-nav">
@@ -19,7 +19,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -28,21 +28,17 @@
               Фото и видео
             </a>
           </li>
+          <li class="site-list__item site-list__item--current">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">
+              HTML Academy
+            </a>
+          </li>
         </ul>
-        <div class="main-nav__list user-list">
-          <ul class="main-nav__list user-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="form.html">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
   </header>
@@ -259,13 +255,13 @@
   </footer>
 
   <div class="review-modal">
-    <div class="review-modal__modal-error review-modal__modal-error--close ">
+    <div class="review-modal__error review-modal__error--close ">
       <h2 class="review-modal__title">Что-то пошло не так!</h2>
       <p class="review-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="review-modal__button button" type="button">Oк</button>
     </div>
 
-    <div class="review-done review__modal__modal-done--close">
+    <div class="review-modal__done review-modal__done--close">
       <h2 class="review-modal__title">Ваш отзыв отправлен!</h2>
       <p class="review-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
         опубликуем его на сайте.</p>
