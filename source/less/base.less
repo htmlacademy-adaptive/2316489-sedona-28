@@ -1,0 +1,49 @@
+@import "../less/colors.less";
+@import "../less/fonts.less";
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "PT Sant", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.visually-hidden:not(:focus, :active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
