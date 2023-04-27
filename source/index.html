@@ -14,7 +14,7 @@
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -61,9 +61,9 @@
       <h2 class="visually-hidden">Преимущества города.</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--picture">
-            <h3 class="advantages__title advantages__title--picture">Настоящий городок</h3>
-            <p class="advantages__description--picture">— №1 —</p>
-            <p class="advantages__description--picture">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <h3 class="advantages__title advantages__title--picture">Настоящий городок</h3>
+          <p class="advantages__description--picture">— №1 —</p>
+          <p class="advantages__description--picture">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
 
         <li class="advantages__item--image">
@@ -72,17 +72,20 @@
 
         <li class="advantages__item advantages__item--service">
           <h3 class="advantages__title advantages__title--housing">Жильё</h3>
-          <p class="advantages__description advantages__description--service">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <p class="advantages__description advantages__description--service">Рекомендуем пожить в настоящем мотеле, всё
+            как в кино!</p>
         </li>
 
         <li class="advantages__item advantages__item--service">
           <h3 class="advantages__title advantages__title--food">Еда</h3>
-          <p class="advantages__description advantages__description--service">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p class="advantages__description advantages__description--service">Всегда заказывайте топовый фирменный
+            бургер, вы не разочаруетесь!</p>
         </li>
 
         <li class="advantages__item advantages__item--service">
           <h3 class="advantages__title advantages__title--gift">Сувениры</h3>
-          <p class="advantages__description advantages__description--service">Не только китайского, но и настоящего местного производства!</p>
+          <p class="advantages__description advantages__description--service">Не только китайского, но и настоящего
+            местного производства!</p>
         </li>
 
         <li class="advantages__item--image">
@@ -90,9 +93,9 @@
         </li>
 
         <li class="advantages__item advantages__item--picture">
-            <h3 class="advantages__title advantages__title--picture">Там есть Мост дьявола</h3>
-            <p class="advantages__description--picture">— №2 —</p>
-            <p class="advantages__description--picture">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <h3 class="advantages__title advantages__title--picture">Там есть Мост дьявола</h3>
+          <p class="advantages__description--picture">— №2 —</p>
+          <p class="advantages__description--picture">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
 
         <li class="advantages__item">
@@ -123,7 +126,11 @@
     </section>
 
     <section class="map">
-      <img class="map-image" src="img/map.jpg" width="320" height="350" alt="Расположение Седоны на карте.">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18173347386!2d-111.83633818043516!3d34.85437145324309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sam!4v1682324142226!5m2!1sru!2sam"
+        width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
   </main>
 
@@ -136,11 +143,11 @@
       </svg>
     </a>
 
-    <section class="footer-social">
+    <section class="footer__social">
       <h2 class="visually-hidden">Соцсети</h2>
-      <ul class="footer-social__list">
-        <li class="footer-social__item">
-          <a class="footer-social__link" href="https://vk.com/htmlacademy" target="_blank">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">ВКонтакте.</span>
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
               fill="none" viewBox="0 0 48 48">
@@ -159,8 +166,8 @@
           </a>
         </li>
 
-        <li class="footer-social__item">
-          <a class="footer-social__link" href="https://t.me/htmlacademy" target="_blank">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://t.me/htmlacademy" target="_blank">
             <span class="visually-hidden">Телеграм.</span>
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
               fill="none" viewBox="0 0 48 48">
@@ -171,8 +178,8 @@
           </a>
         </li>
 
-        <li class="footer-social__item">
-          <a class="footer-social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <span class="visually-hidden">YouTube.</span>
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
               fill="none" viewBox="0 0 48 48">
@@ -185,11 +192,16 @@
       </ul>
     </section>
 
-    <a class="footer-logo" href="https://htmlacademy.ru/">
-      <span class="footer-logo__text">Разработано</span>
-      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
+    <a class="footer__logo" href="https://htmlacademy.ru/">
+      <span class="footer__logo-text">Разработано</span>
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"
+        viewBox="0 0 27 35">
+        <path fill="#000"
+          d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+      </svg>
     </a>
   </footer>
-</body>
 
+  <script src="./js/script.js"></script>
+</body>
 </html>

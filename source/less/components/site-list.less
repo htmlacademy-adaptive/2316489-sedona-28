@@ -1,0 +1,30 @@
+
+.site-list__link {
+  padding: 17px 0 12px 0;
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: none;
+  }
+}
+
+.site-list__item--current {
+  color: var(--brown);
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.site-list__item {
+  min-width: 153px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
