@@ -29,7 +29,12 @@
   &--image {
     display: flex;
     min-height: 260px;
+    padding: 0;
   }
+}
+
+.advantages__item-image {
+  width: 100%;
 }
 
 .advantages__title {
@@ -48,6 +53,18 @@
     grid-column: 2 / 3;
     text-align: left;
   }
+}
+
+.advantages__title--housing::before {
+  background-image: url("../img/house.svg");
+}
+
+.advantages__title--food::before {
+  background-image: url("../img/burger.svg");
+}
+
+.advantages__title--gift::before {
+  background-image: url("../img/gift.svg");
 }
 
 .advantages__description {
@@ -96,7 +113,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
   }
 }
 

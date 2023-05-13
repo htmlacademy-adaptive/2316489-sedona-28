@@ -14,6 +14,11 @@
   margin: 0 0 38px;
 }
 
+.presentation__video {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: @tablet-width) {
   .presentation {
     padding: 66px 60px 40px;
@@ -21,5 +26,13 @@
 
   .presentation__video {
     min-height: 500px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__video {
+    max-width: 800px;
+    max-height: 500px;
+    padding: 64px 140px 84px;
   }
 }
