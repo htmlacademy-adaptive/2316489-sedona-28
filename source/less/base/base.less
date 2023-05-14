@@ -2,9 +2,9 @@
 @import "fonts.less";
 
 *,
-*::after,
-*::before {
-  box-sizing: inherit;
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 body {
@@ -38,8 +38,8 @@ body {
 }
 
 img {
-  width: 100%;
-  display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .main {
