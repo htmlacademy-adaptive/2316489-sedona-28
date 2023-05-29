@@ -35,6 +35,7 @@
 
 .advantages__item-image {
   width: 100%;
+  object-fit: cover;
 }
 
 .advantages__title {
@@ -52,19 +53,49 @@
   &--gift {
     grid-column: 2 / 3;
     text-align: left;
+    position: relative;
+    margin-bottom: 16px;
+    margin-top: auto;
   }
 }
 
 .advantages__title--housing::before {
   background-image: url("../img/house.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  top: -25px;
+  position: absolute;
+  left: -61px;
 }
 
 .advantages__title--food::before {
   background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  top: -25px;
+  position: absolute;
+  left: -61px;
 }
 
 .advantages__title--gift::before {
   background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  top: -25px;
+  position: absolute;
+  left: -61px;
 }
 
 .advantages__description {
